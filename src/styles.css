@@ -1,0 +1,140 @@
+:root {
+  --color-bg: #D9D3B8;
+  --color-p: #030C26;
+  --color-s: #d1c27e;
+  --color-b1: #70818C;
+  --color-b2: #364959;
+  --color-t: #FFF;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 8px;
+  background: #f0f0f0 url('./img/bg.webp') center/cover no-repeat;
+}
+
+#calculator {
+  width: 450px;
+  background-color: var(--color-p);
+  color: var(--color-t);
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #091744;
+  box-shadow: 6.5px -8px 0 0 rgba(0, 0, 0, 0.25);
+  user-select: none;
+}
+
+#prevOperation {
+  min-height: 40px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5px;
+  font-size: 25px;
+  padding: 5px 6px;
+}
+
+#result {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: min(13vw, 60px);
+  padding: 0 6px;
+}
+
+#buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3px;
+}
+
+#buttons button {
+  font-size: min(9vw, 40px);
+  padding: 12px 10px 10px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--color-t);
+  border: none;
+  line-height: 1;
+  height: 60px;
+}
+
+.b3 {
+  font-size: min(8vw, 35px) !important;
+}
+
+.b4 {
+  font-size: min(7vw, 27px) !important;
+}
+
+.b1 {
+  background-color: var(--color-b1);
+}
+
+.b1:hover {
+  background-color: var(--color-b2);
+}
+
+.b2 {
+  background-color: var(--color-b2);
+}
+
+.b2:hover {
+  background-color: var(--color-b1);
+}
+
+#b-equ {
+  background-color: var(--color-s);
+  color: var(--color-b2);
+}
+
+#b-equ:hover {
+  background-color: #c8b45c;
+}
+
+#b-rec-1 {
+  height: 100%;
+  font-size: 0.65em;
+  padding-top: 0.2px;
+  vertical-align: top;
+}
+
+#b-rec-x {
+  font-size: 0.75em;
+  padding-left: 1px;
+}
+
+#b-pow-2 {
+  position: relative;
+  vertical-align: top;
+  top: 4px;
+  height: 100%;
+  padding-left: 1px;
+  font-size: 0.5em;
+}
+
+#b-sqr {
+  position: relative;
+}
+
+#b-sqr-2 {
+  position: absolute;
+  font-size: 0.35em;
+  top: 0.7em;
+  left: 35%;
+}

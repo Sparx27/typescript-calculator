@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + TS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <div id="calculator">
+      <div id="prevOperation"></div>
+      <div id="result">0</div>
+
+      <div id="buttons">
+        <button title="remainder" class="b2 b3" id="b-rem">%</button>
+        <button title="clear entry" class="b2 b3" id="b-ce">CE</button>
+        <button title="clear" class="b2 b3" id="b-c">C</button>
+        <button title="delete last digit" class="b2 b4" id="b-del">&#x232B;</button>
+
+        <button title="reciprocal" class="b2" id="b-rec"><span id="b-rec-1">
+            1</span>/<span id="b-rec-x">x</span>
+        </button>
+        <button title="square" class="b2" id="b-pow">x<span id="b-pow-2">2</span></button>
+        <button title="square root" class="b2" id="b-sqr"><span id="b-sqr-2">2</span>√x</button>
+        <button title="divide" class="b2" id="b-div">&divide;</button>
+
+        <button class="b1" id="b-7">7</button>
+        <button class="b1" id="b-8">8</button>
+        <button class="b1" id="b-9">9</button>
+        <button title="multiply" class="b2" id="b-mul">&times;</button>
+
+        <button class="b1" id="b-4">4</button>
+        <button class="b1" id="b-5">5</button>
+        <button class="b1" id="b-6">6</button>
+        <button title="subtract" class="b2" id="b-sub">-</button>
+
+        <button class="b1" id="b-1">1</button>
+        <button class="b1" id="b-2">2</button>
+        <button class="b1" id="b-3">3</button>
+        <button title="add" class="b2" id="b-add">+</button>
+
+        <button title="change sign" class="b1" id="b-sig">+/-</button>
+        <button class="b1" id="b-0">0</button>
+        <button title="insert decimal" class="b1" id="b-dec">,</button>
+        <button title="show result" id="b-equ">=</button>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
